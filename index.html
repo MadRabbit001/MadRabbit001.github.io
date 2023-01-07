@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Priority</title>
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+
+<body
+    background="C:\Users\PC\Desktop\front\helpdesk\frontend\Modern_abstract_blue_transparent_crystal_pattern_background.jpg">
+
+    <div><img src="C:\Users\PC\Desktop\front\helpdesk\frontend\logo.jpg" width="150"> </div>
+
+    <div class="login-container">
+        <div class="logo">
+            <img src="C:\Users\PC\Desktop\front\helpdesk\frontend\logo.jpg" alt="Company logo">
+        </div>
+        <form onsubmit="return validateForm()" action="/C:\Users\PC\Desktop\front\helpdesk\frontend\opening.html"
+            method="post">
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <button type="submit">Log in</button>
+            </div>
+        </form>
+
+        <script type="text/javascript">
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if (email != "liron.ben-shushan@priority-software.com") {
+                    alert("Incorrect email address");
+                    return false;
+                }
+
+                if (password != "Ll@12341234!") {
+                    alert("Incorrect password");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>
