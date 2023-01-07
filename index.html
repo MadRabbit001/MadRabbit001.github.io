@@ -16,8 +16,7 @@
         <div class="logo">
             <img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/logo.jpg?raw=true" alt="Company logo">
         </div>
-        <form onsubmit="return validateForm()" action="madrabbit001.github.io/priority.helpdesk/opening.html"
-            method="post">
+        <form onsubmit="return validateForm()" action="opening.html" method="post">
             <div>
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" required>
@@ -31,24 +30,7 @@
             </div>
         </form>
 
-        <script type="text/javascript">
-            function validateForm() {
-                var email = document.getElementById("email").value;
-                var password = document.getElementById("password").value;
-
-                if (email != "liron.ben-shushan@priority-software.com") {
-                    alert("Incorrect email address");
-                    return false;
-                }
-
-                if (password != "Ll@12341234!") {
-                    alert("Incorrect password");
-                    return false;
-                }
-
-                return true;
-            }
-        </script>
+        <script src="index.js"></script>
 
     </div>
 
