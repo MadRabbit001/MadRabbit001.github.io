@@ -2,17 +2,31 @@
 var users = [
     {
         email: "liron.ben-shushan@priority-software.com",
-        password: "password1"
+        password: "-928147210"
     },
     {
         email: "omri.danino@priority-software.com",
-        password: "password2"
+        password: "-928147209"
     },
     {
         email: "shir.ben.gigi@priority-software.com",
-        password: "password3"
+        password: "-928147208"
     }
 ];
+
+
+function hashCode(str) {
+    let hash = 0;
+    if (str.length == 0) {
+        return hash;
+    }
+    for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = (hash << 5) - hash + char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash;
+}
 
 // Function to validate the email and password entered by the user
 // Function to validate the email and password entered by the user
@@ -22,7 +36,7 @@ function validateForm(event) {
 
     // Get the email and password values from the form
     var email = document.getElementById("email").value.toLowerCase();
-    var password = document.getElementById("password").value;
+    var password = hashCode(document.getElementById("password").value);
 
     // Check if the email and password match a user in the array
     if (validateCredentials(email, password)) {
