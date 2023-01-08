@@ -28,15 +28,16 @@ function hashCode(str) {
     return hash;
 }
 
-// Function to validate the email and password entered by the user
-// Function to validate the email and password entered by the user
+// Get the email and password values from the form
+    var email = document.getElementById("email").value.toLowerCase();
+    var password = hashCode(document.getElementById("password").value);
+
+
 // Function to validate the email and password entered by the user
 function validateForm(event) {
     console.log("validateForm() called");  // Debugging line
 
-    // Get the email and password values from the form
-    var email = document.getElementById("email").value.toLowerCase();
-    var password = hashCode(document.getElementById("password").value);
+    
 
     // Check if the email and password match a user in the array
     if (validateCredentials(email, password)) {
