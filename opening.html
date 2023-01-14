@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Priority</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-    <nav class="zone green">
-        <ul class="main-nav">
-            <li><a href="">אודות</a></li>
-            <li><a href="">עזרים</a></li>
-            <li><a href="development.html">צוות הפיתוח</a></li>
-            <li class="push"><a href="">אנשי קשר</a></li>
-        </ul>
-    </nav>
-    <div class="container zone red" style="color: rgb(1, 8, 8);">ברוכים הבאים לאתר הטיפול בתקלות של פריוריטי ריטייל
+  <body>
+    <div class="menu-bar">
+      <ul>
+        <li>
+          <a href="#">תוספים</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">סקריפטים</a></li>
+              <li><a href="#">פרטי התחברות</a></li>
+              <li><a href="#">אנשי קשר</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">תקשורת</a></li>
+        <li><a href="#">צ'קים</a></li>
+        <li><a href="#">חומרה</a></li>
+        <li><a href="#">פריוריטי</a></li>
+        <li>
+          <a href="#">משרד אחורי</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">סרטיפיקציה</a></li>
+              <li><a href="#">set user</a></li>
+              <li><a href="#">דפדפן לא עולה</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">קופה</a></li>
+        <li class="active">
+          <a href="#">מסך בית</a>
+        </li>
+      </ul>
     </div>
-    <div class="zone blue grid-wrapper">
-        <a href="priority.html">
-            <div class="box zone prio"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/priorityweb.jpg?raw=true">
-                <p>פריוריטי</p>
-            </div>
-        </a>
-        <div class="box zone"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/cashregister.jpg?raw=true">
-            <p>חומרה</p>
-        </div>
-        <div class="box zone"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/files_2.png?raw=true">
-            <p>משרד אחורי</p>
-        </div>
-        <div class="box zone"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/CRAPP.png?raw=true">
-            <p>קופה</p>
-        </div>
-        <div class="box zone"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/monitor_settings_2.png?raw=true">
-            <p>תקשורת</p>
-        </div>
-        <div class="box zone"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/server_2_2.png?raw=true">
-            <p>בנתיים לא עושה כלום</p>
-        </div>
-        <div class="box zone"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/server_3.png?raw=true">
-            <p>בנתיים לא עושה כלום</p>
-        </div>
-        <div class="box zone"><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/server_safe_2.png?raw=true">
-            <p>פרטי התחברות</p>
-        </div>
+    <div class="footer">
+      <div>
+        <a href="https://madrabbit001.github.io/guess-game/">משחק</a> או
+        <a href="development.html">צוות הפיתוח</a>
+      </div>
+      <footer id="show" class="zone yellow">
+        <a href="#" class="hey">This website made by MadRabbit©</a>
+      </footer>
     </div>
-    <footer class="zone yellow footer">This website made by MadRabbit</footer>
 
-</body>
-
+    <script src="opening.js"></script>
+  </body>
 </html>
