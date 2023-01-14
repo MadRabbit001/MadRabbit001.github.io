@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>priority</title>
+    <link rel="stylesheet" href="forum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav class="navigation hide" id="navigation">
+          <ul class="nav-list">
+            <span class="close-icon" onclick="showIconBar()"
+              ><i class="fa fa-close"></i
+            ></span>
+            <li class="nav-item">
+              <a href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Detail</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <div class="brand">My Forum</div>
+      </div>
+      <!--Search Box-->
+      <div class="search-box">
+        <div>
+          <select name="" id="">
+            <option value="everything">Everything</option>
+            <option value="titles">Titles</option>
+            <option value="descriptions">Descriptions</option>
+          </select>
+          <input type="text" name="q" id="" placeholder="search ..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="subforum">
+        <div class="subforum-title">
+          <h1>genreal information</h1>
+        </div>
+        <div class="subforum-row">
+          <div class="subforum-icon subforum-column center">
+            <i class="fa fa-car"></i>
+          </div>
+          <div class="subforum-description subforum-column">
+            <h1><a href="">Description Title</a></h1>
+            <p>
+              Description Content: just type anything here to fit as a deskfdgd
+              fdkgfdkgd dfkg fdkgd
+            </p>
+          </div>
+          <div class="subforum-stats subforum-column center">
+            <span>24 Posts | 15 Topics</span>
+          </div>
+          <div class="subforum-info subforum-column">
+            <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
+            <br />
+            on <small>22 dec 2022</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forum info   -->
+    <div class="forum-info">
+      <div class="chart">
+        My Forum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
+      </div>
+      <div>
+        <span
+          ><u>5,369</u> Posts in <u>1,210</u> Topics by
+          <u>45,214</u> users</span
+        ><br />
+        <span
+          >Latest Post: <b><a href="#">Random Post</a></b> on 15 Dec 2021 by
+          <a href="#">RandomUser</a></span
+        >
+      </div>
+    </div>
+
+    <footer>
+      <span>&copy; &nbsp;Liron Ben Shushan | All rights reserved.</span>
+    </footer>
+
+    <script src="forum.js"></script>
+  </body>
+</html>
