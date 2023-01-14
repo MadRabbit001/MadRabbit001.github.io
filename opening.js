@@ -9,7 +9,21 @@
 //   }
 // });
 let mad = document.querySelector(".hey");
+let game = document.querySelector(".game");
 
-function rabbit() {}
+function rabbit() {
+  game.classList.toggle("hidden");
+  setTimeout(niceshadow, 200);
+  setTimeout(badshadow, 400);
+}
 
-mad.addEventListener("click", function () {});
+function niceshadow() {
+  mad.setAttribute("style", "box-shadow: inset 2px 2px 5px #333");
+}
+
+function badshadow() {
+  mad.setAttribute(
+    "style",
+    "box-shadow: 2px 2px 5px #333, -2px -2px 5px #333;"
+  );
+}
