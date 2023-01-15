@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Priority</title>
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="indexstyle.css" />
+  </head>
 
-<body
-    background="https://github.com/MadRabbit001/priority.helpdesk/blob/main/Modern_abstract_blue_transparent_crystal_pattern_background.jpg?raw=true">
-
-    <div><img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/logo.jpg?raw=true" width="150"> </div>
+  <body background="Capture.PNG">
+    <!-- <div class="top-logo">
+      <img
+        src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/logo.jpg?raw=true"
+        width="150"
+      />
+    </div> -->
 
     <div class="login-container">
-        <div class="logo">
-            <img src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/logo.jpg?raw=true" alt="Company logo">
+      <div class="logo">
+        <img
+          src="https://github.com/MadRabbit001/priority.helpdesk/blob/main/logo.jpg?raw=true"
+          alt="Company logo"
+        />
+      </div>
+      <form
+        onsubmit="return validateForm(event)"
+        action="opening.html"
+        method="get"
+      >
+        <div>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required />
         </div>
-        <form onsubmit="return validateForm(event)" action="opening.html" method="get">
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div>
-                <button type="submit">Log in</button>
-            </div>
-        </form>
+        <div>
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+          <button type="submit">Log in</button>
+        </div>
+      </form>
 
-        <script src="index.js"></script>
-
+      <script src="index.js"></script>
     </div>
-
-</body>
-
+  </body>
 </html>
