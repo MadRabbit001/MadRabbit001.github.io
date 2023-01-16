@@ -12,8 +12,10 @@ let mad = document.querySelector(".hey");
 let game = document.querySelector(".game");
 
 let open = document.querySelector(".open");
-let menu1 = document.getElementById("one");
-let menu2 = document.getElementById("two");
+let menu1 = document.querySelector(".one");
+let menu2 = document.querySelector(".two");
+let menu2A = document.querySelector(".twoA");
+let menu2B = document.querySelector(".twoB");
 
 function rabbit() {
   game.classList.toggle("hidden");
@@ -31,7 +33,7 @@ function badshadow() {
     "box-shadow: 2px 2px 5px #333, -2px -2px 5px #333;"
   );
 }
-
+//first line of window
 function openWin1() {
   menu1.classList.toggle("hidden");
   menu2.classList.add("hidden");
@@ -39,4 +41,17 @@ function openWin1() {
 function openWin2() {
   menu2.classList.toggle("hidden");
   menu1.classList.add("hidden");
+  // menu2A.classList.add("hidden");
+}
+// second line of window
+function openSecWin2() {
+  menu2A.classList.toggle("hidden");
+  menu2.classList.toggle("hidden");
+}
+
+// function third line of window
+function openThrdWin2() {
+  menu2B.classList.toggle("hidden");
+  menu2A.classList.toggle("hidden");
+  // menu2.classList.remove("hidden");
 }
