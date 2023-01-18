@@ -1,138 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <title>Priority</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="priority.css" />
   </head>
 
   <body>
-    <div class="menu-bar">
-      <ul>
-        <li onclick="openWin1()">
-          <a href="#" class="open">תוספים</a>
-          <div class="one sub-menu-1 hidden">
-            <ul>
-              <li><a href="#">סקריפטים</a></li>
-              <li><a href="#">פרטי התחברות</a></li>
-              <li><a href="#">אנשי קשר</a></li>
-            </ul>
-          </div>
-        </li>
-        <li onclick="openWin3()">
-          <a href="#">תקשורת</a>
-          <div class="three sub-menu-1 hidden">
-            <ul>
-              <li><a href="#">סקריפטים</a></li>
-              <li><a href="#">פרטי התחברות</a></li>
-              <li><a href="#">אנשי קשר</a></li>
-            </ul>
-          </div>
-        </li>
-        <li onclick="openWin4()">
-          <a href="#">צ'קים</a>
-          <div class="four sub-menu-1 hidden">
-            <ul>
-              <li><a href="#">סקריפטים</a></li>
-              <li><a href="#">פרטי התחברות</a></li>
-              <li><a href="#">אנשי קשר</a></li>
-            </ul>
-          </div>
-        </li>
-        <li onclick="openWin5()">
-          <a href="#">חומרה</a>
-          <div class="five sub-menu-1 hidden">
-            <ul>
-              <li><a href="#">סקריפטים</a></li>
-              <li><a href="#">פרטי התחברות</a></li>
-              <li><a href="#">אנשי קשר</a></li>
-            </ul>
-          </div>
-        </li>
-        <li onclick="openWin6()">
-          <a href="#">פריוריטי</a>
-          <div class="six sub-menu-1 hidden">
-            <ul>
-              <li><a href="#">סקריפטים</a></li>
-              <li><a href="#">פרטי התחברות</a></li>
-              <li><a href="#">אנשי קשר</a></li>
-            </ul>
-          </div>
-        </li>
-        <li onclick="openWin2()">
-          <a href="#" class="open">משרד אחורי</a>
-          <div class="two sub-menu-1 hidden">
-            <ul>
-              <li onclick="openSecWin2()">
-                <a href="#" class="open">סרטיפיקציה</a>
-                <div class="twoA sub-menu-1 hidden">
-                  <ul>
-                    <li onclick="openThrdWin2()">
-                      <a href="#" class="open">משהו</a>
-                      <div class="twoB sub-menu-1 hidden">
-                        <ul>
-                          <a href="http://127.0.0.1:8080/priority.html#image"
-                            ><li>משהו</li></a
-                          >
-                          <a href="http://127.0.0.1:8080/priority.html#reciept">
-                            <li>משהו 2</li></a
-                          >
-                          <li><a href="#">משהו 3</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li onclick="openThrdWin2B()">
-                      <a href="#">משהו 2</a>
-                      <div class="twoB2 sub-menu-1 hidden">
-                        <ul>
-                          <li><a href="#">משהו</a></li>
-                          <li><a href="#">משהו 2</a></li>
-                          <li><a href="#">משהו 3</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#">משהו 3</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="#">set user</a></li>
-              <li><a href="#">דפדפן לא עולה</a></li>
-            </ul>
-          </div>
-        </li>
-        <li onclick="openWin7()">
-          <a href="#">קופה</a>
-          <div class="seven sub-menu-1 hidden">
-            <ul>
-              <li><a href="#">סקריפטים</a></li>
-              <li><a href="#">פרטי התחברות</a></li>
-              <li><a href="#">אנשי קשר</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="active">
-          <a href="#">מסך בית</a>
-        </li>
+    <nav class="zone green">
+      <ul class="main-nav">
+        <li class="center"><a href="development.html">צוות הפיתוח</a></li>
+        <li class="push"><a href="opening.html">חזרה לדף הבית</a></li>
       </ul>
-    </div>
-    <div class="footer" onclick="closebg()">
-      <div class="plus">
-        <p class="game text hidden">
-          <a href="https://madrabbit001.github.io/guess-game/">משחק</a> או
-          <a href="development.html">צוות הפיתוח</a>
-        </p>
-      </div>
-      <footer id="show" class="zone yellow">
-        <a href="#" class="hey" onclick="rabbit()"
-          >This website made by MadRabbit©</a
-        >
-      </footer>
-    </div>
+    </nav>
+    <div class="container zone red" style="color: rgb(1, 8, 8)">
+      <h2 id="image">תמונות שלא עברו</h2>
+      <p>?האם מוגדר במסך קבועי עמדות מכירה</p>
+      <p>
+        תחת הקבוע: "ספריית תמונות" - יש להגדיר את נתיב התיקייה של התמונות בשרת
+        IIS .יש לוודא כי התיקייה פתוחה לכל המשתמשים.
+      </p>
+      <p>?מה שם התמונה</p>
+      <p>
+        במסך כרטיס פריט: בשדה "תמונה" יש למלא את שם קובץ התמונה כולל הפורמט של
+        התמונה - ניתן לבחור תמונות בפורמט jpg שגודלן עד 500 ק"ב, יש לשים לב כי
+        נתיב
+      </p>
+      <p>התמונה לא מכיל אותיות בעברית, דוגמה לשם תמונה: jpg.911001 ​</p>
+      <p>יש לוודא כי תאריך קובץ התמונה תואם לתאריך הנוכחי ​</p>
+      <p>יש לסמן את הדגל "העברת תמונה"</p>
+      <p>?האם התמונות נמצאות בתיקיה הרלוונטית בשרת IIS</p>
+      <p>?האם התמונות נמצאות בקופות בתיקיה prioripos images​</p>
 
-    <script src="opening.js"></script>
+      <p>יש קובץ PDF במסמכים ב-Share Point, ניתן לשלוח ללקוח להסבר המלא</p>
+      <h2 id="reciept">קבלה ירוקה</h2>
+      <img src="greenReciept.PNG" alt="" />
+    </div>
+    <div class="zone blue grid-wrapper hidden">
+      <a href="">
+        <div class="box zone">
+          <img src="data_storage_2_2.png" />
+          <p>הדרכת מועדון לקוחות</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="box zone">
+          <img src="desktop_analytics_2.png" />
+          <p>הדרכת מחירונים</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="box zone">
+          <img
+            src="https://github.com/MadRabbit001/MadRabbit001.github.io/blob/main/files_2.png?raw=true"
+          />
+          <p>הדרכת תהליכים עסקיים בפריוריטי</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="box zone">
+          <img src="monitor_coding_2.png" />
+          <p></p>
+        </div>
+      </a>
+    </div>
   </body>
 </html>
