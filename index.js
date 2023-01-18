@@ -2,16 +2,16 @@
 var users = [
   {
     email: "liron.ben-shushan@priority-software.com",
-    password: "password1"
+    password: "s10EsSHITd32HHvvd465?4d1",
   },
   {
-    email: "jane.doe@example.com",
-    password: "password2"
+    email: "omri.danino@priority-software.com",
+    password: "s10EsSHITd32HHvvd465?4d2",
   },
   {
-    email: "john.smith@example.com",
-    password: "password3"
-  }
+    email: "shir.ben.gigi@priority-software.com",
+    password: "s10EsSHITd32HHvvd465?4d3",
+  },
 ];
 
 // Function to validate the email and password entered by the user
@@ -20,6 +20,17 @@ function validateForm() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
 
+  email = email.toLowerCase();
+
+  password =
+    password.substring(3, 4) +
+    "10E" +
+    password.substring(3, 4) +
+    "SHIT" +
+    password.substring(7, 8) +
+    "32HHvvd465?4" +
+    password.substring(7);
+    
   // Check if the email and password match a user in the array
   if (validateCredentials(email, password)) {
     // Email and password match a user in the array
