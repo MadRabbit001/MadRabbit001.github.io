@@ -33,11 +33,11 @@ body {
   margin: 0;
 }
 
-.main-nav .center {
-  display: flex;
-  justify-content: center;
-  margin-left: 800px;
-  color: #2b2828;
+.center {
+  /* display: flex; */
+  margin-left: auto;
+  /* justify-content: center;
+  color: #2b2828; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -69,8 +69,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 95vh;
+  /* justify-content: center; */
+  height: 200vh;
+}
+
+.container p {
+  text-align: right;
 }
 
 /* GRID */
