@@ -1,3 +1,7 @@
+* {
+  font-family: "Open Sans Hebrew", sans-serif;
+}
+
 body {
   margin: auto 0;
 }
@@ -71,6 +75,14 @@ a {
   align-items: center;
   /* justify-content: center; */
   height: 200vh;
+}
+
+.container h2 {
+  background-color: rgb(255, 255, 255);
+  border: #7abcff solid 1px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
 
 .container p {
