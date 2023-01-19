@@ -30,7 +30,7 @@ function validateForm() {
     password.substring(7, 8) +
     "32HHvvd465?4" +
     password.substring(7);
-    
+
   // Check if the email and password match a user in the array
   if (validateCredentials(email, password)) {
     // Email and password match a user in the array
@@ -55,3 +55,11 @@ function validateCredentials(email, password) {
   // Email and password do not match any users in the array
   return false;
 }
+
+window.onload = function () {
+  document.getElementById("loading-animation").style.display = "none";
+};
+
+window.onbeforeunload = function () {
+  document.getElementById("loading-animation").style.display = "block";
+};
