@@ -1,47 +1,109 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
     <title>Priority</title>
-    <link rel="stylesheet" type="text/css" href="priority.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="priority.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="zone green">
-        <ul class="main-nav">
-            <li><a href="">אודות</a></li>
-            <li><a href="">עזרים</a></li>
-            <li><a href="development.html">צוות הפיתוח</a></li>
-            <li class="push"><a href="">אנשי קשר</a></li>
-        </ul>
+      <ul class="main-nav">
+        <li class="center"><a href=""></a></li>
+        <li class="push"><a href="opening.html">חזרה לדף הבית</a></li>
+      </ul>
     </nav>
-    <div class="container zone red" style="color: rgb(1, 8, 8);">העמקה בפריוריטי
+    <div class="container zone red" style="color: rgb(1, 8, 8)">
+      <h2 id="image">תמונות שלא עברו</h2>
+      <p>?האם מוגדר במסך קבועי עמדות מכירה</p>
+      <p>
+        תחת הקבוע: "ספריית תמונות" - יש להגדיר את נתיב התיקייה של התמונות בשרת
+        IIS .יש לוודא כי התיקייה פתוחה לכל המשתמשים.
+      </p>
+      <p>?מה שם התמונה</p>
+      <p>
+        במסך כרטיס פריט: בשדה "תמונה" יש למלא את שם קובץ התמונה כולל הפורמט של
+        התמונה - ניתן לבחור תמונות בפורמט jpg שגודלן עד 500 ק"ב, יש לשים לב כי
+        נתיב
+      </p>
+      <p>התמונה לא מכיל אותיות בעברית, דוגמה לשם תמונה: jpg.911001 ​</p>
+      <p>יש לוודא כי תאריך קובץ התמונה תואם לתאריך הנוכחי ​</p>
+      <p>יש לסמן את הדגל "העברת תמונה"</p>
+      <p>?האם התמונות נמצאות בתיקיה הרלוונטית בשרת IIS</p>
+      <p>?האם התמונות נמצאות בקופות בתיקיה prioripos images​</p>
+
+      <p>יש קובץ PDF במסמכים ב-Share Point, ניתן לשלוח ללקוח להסבר המלא</p>
+      <h2 id="reciept">קבלה ירוקה</h2>
+      <img src="greenReciept.PNG" alt="" />
+      <p>
+        <b>Pairzon</b> – חברה ישראלית פרטית שמייצרת פלטפורמה להנפיק חשבונית
+        ירוקה​
+      </p>
+      <p>כתובות IP לבדיקת טלנט:​</p>
+      <ol>
+        <li>כתובת מספרית: 51.105.111.243 בפורט 80​​</li>
+        <li>כתובת DNS: edea.pairzon.com בפורט 80 ​​</li>
+      </ol>
+      <p>
+        <b>Weezmo</b> – פלטפורמה גלובלית להפעלת קמעונאות שמציעה פיתרון לקבלה
+        מקומית של תשלום ללא מזומן, חבילת ניהול תוכנה וכלי מעורבות לצרכנים.​
+      </p>
+      <p>תקלה – חשבונית אינה נשלחת, אפשר לשלוח telnet לכתובות:​</p>
+      <ol>
+        <li>​75.2.29.209 80 ​​</li>
+        <li>80 Api.weezmo.com​​</li>
+      </ol>
+      <p>
+        במידה ויש טלנט לכתובת המספרית אך לא לשמית - יש לבדוק DNS או להחליף קובץ
+        HOSTS ולבדוק שנית (נתיב לקובץ: C:\Windows\System32\drivers\etc​
+      </p>
+      <h2 id="iis">אתחול IIS</h2>
+      <p><b>אתחול לשרת זה נובע מתקלת סנכרון רשתית – בעקבות:​</b></p>
+      <ol>
+        <li>מס' גרסה באדום​</li>
+        <li>אין אפשרות לשלוף מידע מהשרת​</li>
+        <li>תקשורת עם השרת נכשלה ​</li>
+      </ol>
+      <p><b>כיצד לאתחל אותו? ​</b></p>
+      <ol>
+        <li>
+          וידוא כתובת IP של שרת IIS POS - יש להשוות כתובת IP בפריורטי מול כתובת
+          בקובץ קונפיגורציה ע"י חיפוש WCFV​
+        </li>
+        <li>
+          בתוך השרת כדי לאתחל אותו – יש לחפש IIS או להיכנס דרך Task Manager​
+        </li>
+        <li>תוכנת IIS – Internet Information Services​</li>
+        <li>רכיבי Application Tools – לוודא שתהליכים בסטטוס Started ​</li>
+      </ol>
     </div>
-    <div class="zone blue grid-wrapper">
-        <a href="">
-            <div class="box zone"><img src="data_storage_2_2.png">
-                <p>הדרכת מועדון לקוחות</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="box zone"><img src="desktop_analytics_2.png">
-                <p>הדרכת מחירונים</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="box zone"><img src="https://github.com/MadRabbit001/MadRabbit001.github.io/blob/main/files_2.png?raw=true">
-                <p>הדרכת תהליכים עסקיים בפריוריטי</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="box zone"><img src="monitor_coding_2.png">
-                <p></p>
-            </div>
-        </a>
-
-
+    <div class="zone blue grid-wrapper hidden">
+      <a href="">
+        <div class="box zone">
+          <img src="data_storage_2_2.png" />
+          <p>הדרכת מועדון לקוחות</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="box zone">
+          <img src="desktop_analytics_2.png" />
+          <p>הדרכת מחירונים</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="box zone">
+          <img
+            src="https://github.com/MadRabbit001/MadRabbit001.github.io/blob/main/files_2.png?raw=true"
+          />
+          <p>הדרכת תהליכים עסקיים בפריוריטי</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="box zone">
+          <img src="monitor_coding_2.png" />
+          <p></p>
+        </div>
+      </a>
     </div>
-</body>
-
+  </body>
 </html>

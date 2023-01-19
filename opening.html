@@ -13,9 +13,9 @@
   <body>
     <div class="menu-bar">
       <ul>
-        <li>
-          <a href="#">תוספים</a>
-          <div class="sub-menu-1">
+        <li onclick="openWin1()">
+          <a href="#" class="open">תוספים</a>
+          <div class="one sub-menu-1 hidden">
             <ul>
               <li><a href="#">סקריפטים</a></li>
               <li><a href="#">פרטי התחברות</a></li>
@@ -23,33 +23,115 @@
             </ul>
           </div>
         </li>
-        <li><a href="#">תקשורת</a></li>
-        <li><a href="#">צ'קים</a></li>
-        <li><a href="#">חומרה</a></li>
-        <li><a href="#">פריוריטי</a></li>
-        <li>
-          <a href="#">משרד אחורי</a>
-          <div class="sub-menu-1">
+        <li onclick="openWin3()">
+          <a href="#">תקשורת</a>
+          <div class="three sub-menu-1 hidden">
             <ul>
-              <li><a href="#">סרטיפיקציה</a></li>
-              <li><a href="#">set user</a></li>
-              <li><a href="#">דפדפן לא עולה</a></li>
+              <li><a href="#">סקריפטים</a></li>
+              <li><a href="#">פרטי התחברות</a></li>
+              <li><a href="#">אנשי קשר</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="#">קופה</a></li>
+        <li onclick="openWin4()">
+          <a href="#">צ'קים</a>
+          <div class="four sub-menu-1 hidden">
+            <ul>
+              <li><a href="#">סקריפטים</a></li>
+              <li><a href="#">פרטי התחברות</a></li>
+              <li><a href="#">אנשי קשר</a></li>
+            </ul>
+          </div>
+        </li>
+        <li onclick="openWin5()">
+          <a href="#">חומרה</a>
+          <div class="five sub-menu-1 hidden">
+            <ul>
+              <li><a href="#">סקריפטים</a></li>
+              <li><a href="#">פרטי התחברות</a></li>
+              <li><a href="#">אנשי קשר</a></li>
+            </ul>
+          </div>
+        </li>
+        <li onclick="openWin6()">
+          <a href="#">פריוריטי</a>
+          <div class="six sub-menu-1 hidden">
+            <ul>
+              <li><a href="#">סקריפטים</a></li>
+              <li><a href="#">פרטי התחברות</a></li>
+              <li><a href="#">אנשי קשר</a></li>
+            </ul>
+          </div>
+        </li>
+        <li onclick="openWin2()">
+          <a href="#" class="open">משרד אחורי</a>
+          <div class="two sub-menu-1 hidden">
+            <ul>
+              <li onclick="openSecWin2()">
+                <a href="#" class="open">סרטיפיקציה📚</a>
+                <div class="twoA sub-menu-1 hidden">
+                  <ul>
+                    <li onclick="openThrdWin2()">
+                      <a href="#" class="open">משהו📚</a>
+                      <div class="twoB sub-menu-1 hidden">
+                        <ul>
+                          <a href="priority.html#image" target="_blank"
+                            ><li>משהו📄</li></a
+                          >
+                          <a href="priority.html#reciept" target="_blank">
+                            <li>משהו 2📄</li></a
+                          >
+                          <a href="priority.html#iis" target="_blank"
+                            ><li>משהו 3</li></a
+                          >
+                        </ul>
+                      </div>
+                    </li>
+                    <li onclick="openThrdWin2B()">
+                      <a href="#">משהו 2📚</a>
+                      <div class="twoB2 sub-menu-1 hidden">
+                        <ul>
+                          <li><a href="#">משהו</a></li>
+                          <li><a href="#">משהו 2</a></li>
+                          <li><a href="#">משהו 3</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#">משהו 3</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">set user📚</a></li>
+              <li><a href="#">דפדפן לא עולה📚</a></li>
+            </ul>
+          </div>
+        </li>
+        <li onclick="openWin7()">
+          <a href="#">קופה</a>
+          <div class="seven sub-menu-1 hidden">
+            <ul>
+              <li><a href="#">סקריפטים</a></li>
+              <li><a href="#">פרטי התחברות</a></li>
+              <li><a href="#">אנשי קשר</a></li>
+            </ul>
+          </div>
+        </li>
         <li class="active">
           <a href="#">מסך בית</a>
         </li>
       </ul>
     </div>
-    <div class="footer">
-      <div>
-        <a href="https://madrabbit001.github.io/guess-game/">משחק</a> או
-        <a href="development.html">צוות הפיתוח</a>
+    <div class="footer" onclick="closebg()">
+      <div class="plus">
+        <p class="game text hidden">
+          <a href="https://madrabbit001.github.io/guess-game/">משחק</a> או
+          <a href="development.html">צוות הפיתוח</a>
+        </p>
       </div>
       <footer id="show" class="zone yellow">
-        <a href="#" class="hey">This website made by MadRabbit©</a>
+        <a href="#" class="hey" onclick="rabbit()"
+          >This website made by MadRabbit©</a
+        >
       </footer>
     </div>
 

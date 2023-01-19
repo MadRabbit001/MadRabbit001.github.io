@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>priority</title>
+    <link rel="stylesheet" href="forum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav class="navigation hide" id="navigation">
+          <ul class="nav-list">
+            <span class="close-icon" onclick="showIconBar()"
+              ><i class="fa fa-close"></i
+            ></span>
+            <li class="nav-item">
+              <a href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Detail</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <div class="brand">My Forum</div>
+      </div>
+      <!--Search Box-->
+      <div class="search-box">
+        <div>
+          <select name="" id="">
+            <option value="everything">Everything</option>
+            <option value="titles">Titles</option>
+            <option value="descriptions">Descriptions</option>
+          </select>
+          <input type="text" name="q" id="" placeholder="search ..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <!--Navigation path  -->
+      <div class="navigate">
+        <span
+          ><a href="">My Forum - Forums</a> >> <a href="">Random Topic</a></span
+        >
+      </div>
+
+      <div class="posts-table">
+        <div class="table-head">
+          <div class="status">Status</div>
+          <div class="subjects">Subjects</div>
+          <div class="replies">Replies/Views</div>
+          <div class="last-reply">Last Reply</div>
+        </div>
+        <div class="table-row">
+          <div class="status"><i class="fa fa-fire"></i></div>
+          <div class="subjects">
+            <a href="">is learning python worth it</a>
+            <br />
+            <span
+              >Started by <b><a href="">User</a></b
+              >.</span
+            >
+          </div>
+
+          <div class="replies">
+            2 replies <br />
+            125 viewa
+          </div>
+
+          <div class="last-reply">
+            Oct12 2022
+            <br />
+            By <b><a href=""></a>User</b>
+          </div>
+        </div>
+      </div>
+
+      <!--Pagination  -->
+      <div class="pagination">
+        pages: <a href="">1</a><a href="">2</a><a href="">3</a>
+      </div>
+    </div>
+
+    <footer>
+      <span>&copy; &nbsp;Liron Ben Shushan | All rights reserved.</span>
+    </footer>
+
+    <script src="forum.js"></script>
+  </body>
+</html>
