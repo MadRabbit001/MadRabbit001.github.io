@@ -157,6 +157,14 @@ searchInput.addEventListener("input", function () {
   }
 });
 
+select.addEventListener("change", function () {
+  if (this.value === "option1") {
+    window.location.replace("priority.html#iis");
+  } else if (this.value === "option2") {
+    window.location.replace("priority.html#reciept");
+  }
+});
+
 // const searchInput = document.getElementById("search-input");
 // const select = document.getElementById("my-select");
 // const options = select.options;
