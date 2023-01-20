@@ -44,11 +44,19 @@ function badshadow() {
 
 //close all window
 function closebg() {
+  //first
   menu1.classList.add("hidden");
+  //second
   menu2.classList.add("hidden");
-  menu2A.classList.add("hidden");
-  menu2B.classList.add("hidden");
-  menu2B2.classList.add("hidden");
+  // menu2A.classList.add("hidden");
+  // menu2B.classList.add("hidden");
+  // menu2B2.classList.add("hidden");
+  //third
+  menu3.classList.add("hidden");
+  menu4.classList.add("hidden");
+  menu5.classList.add("hidden");
+  menu6.classList.add("hidden");
+  menu7.classList.add("hidden");
 }
 //first line of window : 7
 function openWin1() {
@@ -122,25 +130,25 @@ function openWin7() {
 }
 
 // second line of window : 3
-function openSecWin2() {
-  menu2A.classList.toggle("hidden");
-  menu2.classList.toggle("hidden");
-}
+// function openSecWin2() {
+//   menu2A.classList.toggle("hidden");
+//   menu2.classList.toggle("hidden");
+// }
 
 // function third line of window : 3
-function openThrdWin2() {
-  menu2B.classList.toggle("hidden");
-  menu2A.classList.toggle("hidden");
+// function openThrdWin2() {
+//   menu2B.classList.toggle("hidden");
+//   menu2A.classList.toggle("hidden");
 
-  if (!menu2B2.classList.contains("hidden")) menu2B2.classList.add("hidden");
-}
+//   if (!menu2B2.classList.contains("hidden")) menu2B2.classList.add("hidden");
+// }
 
-function openThrdWin2B() {
-  menu2B2.classList.toggle("hidden");
-  menu2A.classList.toggle("hidden");
+// function openThrdWin2B() {
+//   menu2B2.classList.toggle("hidden");
+//   menu2A.classList.toggle("hidden");
 
-  if (!menu2B.classList.contains("hidden")) menu2B.classList.add("hidden");
-}
+//   if (!menu2B.classList.contains("hidden")) menu2B.classList.add("hidden");
+// }
 
 const searchInput = document.getElementById("search-input");
 const select = document.getElementById("my-select");
