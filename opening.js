@@ -141,3 +141,41 @@ function openThrdWin2B() {
 
   if (!menu2B.classList.contains("hidden")) menu2B.classList.add("hidden");
 }
+
+const searchInput = document.getElementById("search-input");
+const select = document.getElementById("my-select");
+const options = select.options;
+
+searchInput.addEventListener("input", function () {
+  const searchValue = this.value.toLowerCase();
+  for (let i = 0; i < options.length; i++) {
+    if (options[i].innerHTML.toLowerCase().indexOf(searchValue) !== -1) {
+      options[i].style.display = "block";
+    } else {
+      options[i].style.display = "none";
+    }
+  }
+});
+
+// const searchInput = document.getElementById("search-input");
+// const select = document.getElementById("my-select");
+// const options = select.options;
+
+// searchInput.addEventListener("input", function () {
+//   const searchValue = this.value.toLowerCase();
+//   for (let i = 0; i < options.length; i++) {
+//     if (options[i].innerHTML.toLowerCase().indexOf(searchValue) !== -1) {
+//       options[i].style.display = "block";
+//     } else {
+//       options[i].style.display = "none";
+//     }
+//   }
+// });
+
+// searchInput.addEventListener("focus", function () {
+//   select.style.display = "block";
+// });
+
+// searchInput.addEventListener("blur", function () {
+//   select.style.display = "none";
+// });
