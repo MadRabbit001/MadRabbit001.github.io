@@ -12,7 +12,7 @@ body {
   font-family: sans-serif;
 }
 .menu-bar {
-  background: rgb(101, 101, 121);
+  background: rgb(111, 111, 121,0.5);
   text-align: center;
   z-index: 2;
 }
