@@ -28,6 +28,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
     inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
+nav {
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+  padding: 0%;
+}
 
 /* NAV */
 .main-nav {
@@ -35,13 +43,6 @@ body {
   list-style: none;
   font-size: 0.7em;
   margin: 0;
-}
-
-.center {
-  /* display: flex; */
-  margin-left: auto;
-  /* justify-content: center;
-  color: #2b2828; */
 }
 
 @media only screen and (max-width: 600px) {
