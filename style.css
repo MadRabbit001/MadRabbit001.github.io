@@ -168,6 +168,20 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+  
+  body {
+    background-image: url(newopen.png);
+    background-color: rgb(1, 41, 128);
+    background-size: 350vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+  }
+
+  .menu-bar ul {
+    background-color: rgba(160, 152, 152);
+  }
+  
   .search {
     position: fixed;
     display: flex;
