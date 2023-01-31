@@ -258,6 +258,13 @@ select.addEventListener("change", function () {
   }
 });
 
+const tv = document.querySelector(".tv");
+const searchBar = document.querySelector(".search");
+function search() {
+  tv.classList.toggle("hidden");
+  searchBar.classList.toggle("hidden");
+}
+
 // const searchInput = document.getElementById("search-input");
 // const select = document.getElementById("my-select");
 // const options = select.options;

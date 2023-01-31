@@ -13,6 +13,7 @@
   <body>
     <div class="menu-bar">
       <ul>
+        <li class="search-icon" onclick="search()"><a href="#">🔍</a></li>
         <li onclick="openWin1()">
           <a href="#" class="open">תוספים</a>
           <div class="one sub-menu-1 hidden">
@@ -179,6 +180,8 @@
         </li>
       </ul>
     </div>
+    <img src="tv.png" alt="" class="tv hidden" />
+
     <div class="footer" onclick="closebg()">
       <div class="plus">
         <p class="game text hidden">
@@ -189,7 +192,7 @@
           <a href="development.html">צוות הפיתוח</a>
         </p>
       </div>
-      <div class="search">
+      <div class="search hidden">
         <input
           type="text"
           placeholder="?איזה מסך אתה מעוניין לבחור"
